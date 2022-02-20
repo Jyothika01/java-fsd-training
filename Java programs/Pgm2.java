@@ -1,48 +1,12 @@
-import java.util.*;
-
+package assignment_7;
 public class Pgm2 {
-
-  public static void main(String[] args) {
-   ArrayList<Integer> arraylist = new ArrayList<Integer>();
-	   arraylist.add(1);
-	   arraylist.add(2);
-	   arraylist.add(3);
-	   arraylist.add(4);
-    int sum = 0;
-    for (int i : arraylist) {
-      sum += i;
-    }
-    double average = sum / arraylist.size();
-    
-    System.out.println("Sum = " + sum);
-    System.out.println("Average = " + average);
-   
-
-  }
-}
-
-or
-
-import java.util.ArrayList;
-
-public class CollectionsExmp2 {
-	public static void main(String[] args) {
-		ArrayList<Integer> sum = new ArrayList<Integer>();
-		sum.add(12);
-		sum.add(30);
-		sum.add(50);
-		sum.add(34);
-		sum.add(56);
-	   System.out.println("Elements of ArrayList: "+sum);
-	   int SUM =0;
-	   int avg = 0;
-	   int total=0;
-	   for(int i : sum) SUM += i;
-	   System.out.println("Sum of the the elements is: "+SUM);
-		   avg = SUM / sum.size();
-		   System.out.println("Average is: "+avg);
-	 
-	   
-
-}
-}
+	   public static void main(String[] args) {
+	      String str = "Hello World.";
+	      try {
+	         str.charAt(28);
+	         System.out.println("String Index is valid");
+	      } catch (StringIndexOutOfBoundsException e) {
+	         System.out.println("String Index is out of bounds");
+	      }
+	   }
+	}
