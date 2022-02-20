@@ -1,70 +1,63 @@
-import java.util.Scanner;
- 
-class UserDefined extends Exception
+import java.util.ArrayList;
+
+public class Pgm3 {
+
+public static void main(String[] args) {
+ ArrayList<String> Fname = new ArrayList<String>();
+ ArrayList<String> Lname = new ArrayList<String>();
+ ArrayList<String> Rname = new ArrayList<String>();
+ Fname.add("Ann");
+ Fname.add("Bini");
+ Fname.add("Meenu");
+ Fname.add("Anju");
+ Lname.add("Mariya");
+ Lname.add("Babu");
+ Lname.add("Raj");
+ Lname.add("VS");
+for (int i =0;i<Fname.size();i++ )
 {
-    String str;
-    UserDefined(String str)
-    {
-        this.str=str;
-    }
-    public String toString()
-    {
-        return str;
-    }
+    Rname.add(Fname.get(i)+"  "+Lname.get(i));
+
 }
-public class Pgm3
+System.out.println("Full Names:");
+for(String i:Rname)
 {
-    public static void main(String[] args)
-    {
-        Scanner s=new Scanner(System.in);
-        System.out.print("Enter Number:");
-        int a=s.nextInt();
-        try
-        {
-            if(a<0)
-            {
-                throw new UserDefined("Invalid Number");
-            }
-            System.out.println("Number Accepted");
-        }
-        catch(UserDefined e)
-        {
-            System.out.println(e);
-        }
-    }
+  System.out.println(i);
 }
+}
+}
+
 
 or
 
-package java_training4;
-
-
-
-public class userDefinedException {
+public class Names_ArrayList {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int i,j;
-		i=8;
-		j=9;
-		try {
-			int k = i/j; //0
-			if(k==0)
-			{
-				throw new JaviException("this is not i wanted");
-			}
-		}
-		catch(Exception e)
-		{
-			System.out.println(e);
+		ArrayList<String> first_name = new ArrayList<String>();
+		first_name.add("Lijin");
+		first_name.add("Vipin");
+		first_name.add("Akhil");
+		System.out.println("First name is ="+first_name);
+		
+		ArrayList<String> second_name = new ArrayList<String>();
+		second_name.add("Joy");
+		second_name.add("Kumar");
+		second_name.add("Suresh");
+		System.out.println("Second name is ="+second_name);
+		
+		ArrayList<String> total= new ArrayList<String>();
+		
+		for(int i=0; i<first_name.size();i++) {
+			
+			total.add(first_name.get(i)+" "+second_name.get(i));
 		}
 		
-	}
-
-}
-public class JaviException extends Exception {
-	public JaviException(String msg)
-	{
-		super(msg);
-	}
-}
+		System.out.println("Full name is :");
+		System.out.println("");
+		
+		for (String fullname : total) {
+			System.out.println(fullname);
+		}
+		
+	
+	}}
