@@ -1,18 +1,26 @@
-//Write a program to use a Ternary operator and find the greatest of three numbers.
+//Write a program to input an array of integers according to the users, and find the greatest value of them.
 
-class Greatest
-{
-public static void main(String args[])
-{
-    int n1 = 5, n2 = 10, n3 = 15, max;
-    
-    max = (n1 > n2) ?
-          (n1 > n3 ? n1 : n3) :
-          (n2 > n3 ? n2 : n3);
-     
-    System.out.println("Largest number among " + n1 +
-                             ", " + n2 + " and " + n3 +
-                                 " is " + max + ". " );
-}
-}
- 
+package training_java;
+import java.util.Scanner;
+
+public class Greatest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the size of array:");
+		int size = sc.nextInt();
+		int[] arr1 = new int[size];
+		System.out.println("Enter the array elements:");
+		for(int i=0;i<size;i++) {
+		
+			arr1[i] = sc.nextInt();	
+			}
+		for (int i = 0; i < arr1.length; i++) {  
+           if(arr1[i] > size) { 
+        	   size = arr1[i];  
+        }  
+	}
+        System.out.println("Largest element in the given array: " + size);  
+    }
+ }
