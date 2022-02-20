@@ -1,0 +1,2 @@
+{"_id":{"$oid":"620dd46b814002180c9dc546"},"Name":"Jyothika","Address":"xyz","city":"kerala","age":22}
+{"_id":{"$oid":"620dd6dff1c3e048a4dd9409"},"Name":"Anu","Address":"xyz","city":"kerala","age":22}
