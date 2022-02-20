@@ -1,4 +1,5 @@
-import java.util.Scanner;
+package milestone_1;
+import java.util.*;
 public class Positive
 {
     public static void main(String[] args)
