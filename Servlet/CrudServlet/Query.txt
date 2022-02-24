@@ -1,0 +1,15 @@
+create database CrudServletDB;
+use CrudServletDB;
+CREATE TABLE user905 (
+    id int auto_increment primary key,
+    name varchar(255),
+    password varchar(255),
+    email varchar(255),
+    country varchar(255)
+);
+insert into user905 (id,name,password,email,country) values (id,'sree','111','xyz@gmail.com','India'),
+ (id,'Anju','222','pqr@gmail.com','USA'),
+ (id,'Ram','333','mno@gmail.com','UK'),
+ (id,'Joe','444','abc@gmail.com','China'),
+(id,'Raj','555','hij@gmail.com','France');
+select *from user905;
